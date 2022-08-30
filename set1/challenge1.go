@@ -21,13 +21,13 @@ func FromHex(in string) []byte {
 	return out[0:n]
 }
 
-func ToBase64(inp []byte) string {
-	buf := new(bytes.Buffer)
-	encoder := base64.NewEncoder(base64.StdEncoding, buf)
+func ToBase64(in []byte) string {
+	buffer := new(bytes.Buffer)
+	encoder := base64.NewEncoder(base64.StdEncoding, buffer)
 	defer encoder.Close()
-	_, err := encoder.Write(inp)
+	_, err := encoder.Write(in)
 	if err != nil {
 		panic(err)
 	}
-	return buf.String()
+	return buffer.String()
 }
