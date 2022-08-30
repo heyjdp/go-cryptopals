@@ -30,6 +30,16 @@ func TestChallenge2(t *testing.T) {
 			"afaf545967ddfd80178a4b81fffd63bbc7c1",
 			"75761d0ae488144531224bb9d06066f12673",
 		},
+		{
+			"8e6e5efae293d08b6f36d1cbb33fc5e9a981",
+			"abcdef",
+			"25a3b1512f7c7b46809d1c2418f22a42646e",
+		},
+		{
+			"cefb5bd74d799abded7112dd33527dc4c6da",
+			"61",
+			"af9a3ab62c18fbdc8c1073bc52331ca5a7bb",
+		},
 	}
 
 	for _, testCase := range testData {
